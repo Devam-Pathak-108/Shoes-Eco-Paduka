@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+.row{
+    font-family: Roboto Slab;
+    font-size: 60px;
+    font-weight: Bold;
+}
+
+.products {
+    height: 400px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s;
+    position:relative;
+
+}
+.products:hover{
+    height: 400px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.1);
+    overflow:hidden;
+}
+
+.img_holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    max-height: 90%;    
+    padding: 10px;
+    overflow:hidden;
+    margin: 10px;
+}
+.disp_img{
+    width:auto;
+    max-width: 100%;
+    height:auto;
+    max-height: 80%;
+    padding: 10px;
+    overflow:hidden;
+    padding:10px;
+}
+.product_title{
+    padding:10px;
+    position: absolute;
+    bottom: 0;
+    left:30%;
+    font-family: Roboto Slab;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+.details{
+    display:none;
+}

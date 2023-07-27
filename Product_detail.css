@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+body{
+    overflow-x: hidden;
+}
+
+.car_btns {
+    background-color: rgba(0, 0, 0, 0.033);
+}
+
+.car_inner {
+    height: 700px;
+    width: 100%;
+    position: relative;
+    left: 2;
+}
+
+.car_img {
+    height: 700px;
+    width: auto;
+    position: absolute;
+    left: 10%;
+}
+
+@media only screen and (max-width:1400px) {
+    .car_img {
+        height: 700px;
+        width: auto;
+        position: absolute;
+        left: 2%;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .car_img {
+        height: 700px;
+        width: auto;
+        position: absolute;
+        left: 15%;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .car_img {
+        height: 700px;
+        width: auto;
+        position: absolute;
+        left: 15%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .car_img {
+        height: 700px;
+        width: auto;
+        position: absolute;
+        left: 10%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .car_img {
+        height: 700px;
+        width: auto;
+        position: absolute;
+        left: 2px;
+    }
+}
+
+@media only screen and (max-width:660px) {
+    .car_img {
+        height: 400px;
+        width: auto;
+        position: absolute;
+        left: 15%;
+    }
+
+    .car_inner {
+        height: 400px;
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width:440px) {
+    .car_img {
+        height: 400px;
+        width: auto;
+        position: absolute;
+        left: 0%;
+    }
+
+    .car_inner {
+        height: 400px;
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
+}
+
+
+#Title_shoe {
+    font-family: "Alkatra";
+    font-size: 70px;
+
+}
+
+#price {
+    font-family: "Roboto Slab";
+    font-size: 30px;
+    
+}
+
+#btns {
+    font-family: "Roboto Slab";
+    font-size: 25px;
+}
+
+.shoe_no {
+    border: 2px solid black;
+    color:white;
+    border-radius: 50%;
+    width: 60px;
+    height:60px;
+    margin:10px;
+    background-color: black;
+    font-size: 25px;
+    transition: color,background-color 1s;
+}
+.shoe_no:hover {
+    border: 2px solid black;
+    color:black;
+    border-radius: 50%;
+    width: 60px;
+    height:60px;
+    margin:10px;
+    background-color: white;
+    font-size: 25px;
+}
+
+.add_buy {
+    border: 2px solid black;
+    color:white;
+    border-radius: 25px;
+    width: 300px;
+    height:60px;
+    margin-top:25px;
+    background-color: black;
+    font-size: 25px;
+    transition: color,background-color 1s;
+}
+.add_buy:hover{
+    border: 2px solid black;
+    color:black;
+    border-radius: 25px;
+    width: 300px;
+    height:60px;
+    margin-top:25px;
+    background-color: white;
+    font-size: 25px;
+}
+#Text{
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+#Product{
+    margin-top: 25px;
+    font-family: "Roboto Slab";
+    font-size: 25px;
+}
+#Description {
+    margin-top: 25px;
+    font-family: "Roboto Slab";
+    font-size: 15px;
+
+}

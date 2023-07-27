@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <title> Responsive Contact Us Form  | CodingLab </title>-->
+    <link rel="stylesheet" href="contact.css" />
+    <!-- Fontawesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Us</title>
+    <style>
+      .dis_hide {
+        display: none;
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        width: 400px;
+        height: 100px;
+        background-color: white;
+      }
+      .close_btn {
+        float: right;
+        background-color: black;
+        color: white;
+        width: 50px;
+        height: 30px;
+        transition: background-color 1s;
+      }
+      .close_btn:hover {
+        float: right;
+        background-color: white;
+        color: black;
+        width: 50px;
+        height: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="brand"><img src="images/logo.jpeg" alt="" /></div>
+      <div class="links">
+        <ul>
+          <li><a href="index.html" class="link">Home</a></li>
+          <li><a href="Products.html" class="link">Products</a></li>
+          <li><a href="about.html" class="link">About</a></li>
+          <li><a href="newconact.html" class="link">Contact</a></li>
+          <!-- <li><a href="login.html" class="link">Sign In</a></li> -->
+        </ul>
+      </div>
+      <!-- <div class="profiles">
+        <div class="icn"><a href="#" class="link"><i class="fa-solid icn_icon fa-user"></i></a></div>
+        <div class="icn"><a href="#" class="link"><i class="fa-solid icn_icon fa-heart"></i></a></div>
+        <div class="icn"><a href="#" class="link"><i class="fa-solid icn_icon fa-cart-shopping"></i></a></div>
+    </div> -->
+    </nav>
+    <div class="outer">
+      <div class="container">
+        <div class="content">
+          <div class="left-side">
+            <div class="address details">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="topic">Address</div>
+              <div class="text-one">Ahmedabad</div>
+            </div>
+            <div class="phone details">
+              <i class="fas fa-phone-alt"></i>
+              <div class="topic">Phone</div>
+              <div class="text-one">+91 2490490469</div>
+            </div>
+            <div class="email details">
+              <i class="fas fa-envelope"></i>
+              <div class="topic">Email</div>
+              <div class="text-one">contactpaduka@gmail.com</div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="topic-text">Send us a message</div>
+            <form action="#">
+              <div class="input-box">
+                <input type="text" placeholder="Enter your name" />
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="Enter your email" />
+              </div>
+              <div class="input-box message-box">
+                <textarea
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Enter your message"
+                ></textarea>
+              </div>
+              <div class="button">
+                <input type="button" value="Send Now" onclick="clicked()" />
+                <div class="dis_hide">
+                  <button class="close_btn" onclick="Close()">Close</button>
+                  <center>
+                    <h1>Thanks you for submitting!</h1>
+                  </center>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="fsection">
+        <div class="fhead">Contact</div>
+        <div class="fbody">
+          <p class="finfo"><i class="fa-solid fa-house"></i> Ahmedabad</p>
+          <p class="finfo"><i class="fa-solid fa-phone"></i> +91 2490490469</p>
+          <p class="finfo">
+            <i class="fa-solid fa-envelope"></i> contactpaduka@gmail.com
+          </p>
+        </div>
+      </div>
+      <div class="fsection">
+        <div class="fhead">Get Help</div>
+        <div class="fbody">
+          <p class="finfo">FAQ</p>
+          <p class="finfo">Shipping</p>
+          <p class="finfo">Returns</p>
+          <p class="finfo">Payment Options</p>
+        </div>
+      </div>
+      <div class="fsection">
+        <div class="fhead">Our Stores</div>
+        <div class="fbody">
+          <p class="finfo">Gota</p>
+          <p class="finfo">Chandkheda</p>
+          <p class="finfo">Thaltej</p>
+        </div>
+      </div>
+      <div class="fsection">
+        <div class="fhead">Follow Us</div>
+        <div class="fbody fsocial">
+          <p class="finfo"><i class="fa-solid fa-f"></i></p>
+          <p class="finfo"><i class="fa-solid fa-dove"></i></p>
+          <p class="finfo"><i class="fa-solid fa-camera-retro"></i></p>
+          <p class="finfo"><i class="fa-solid fa-business-time"></i></p>
+        </div>
+      </div>
+      <div class="fsection">
+        <div class="fhead">Newsletter</div>
+        <div class="fbody">
+          <input type="text" placeholder="Your email id here" />
+          <a href="#" id="sub">Subscribe</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function clicked() {
+        document.getElementsByClassName("dis_hide")[0].style.display = "block";
+      }
+      function Close() {
+        document.getElementsByClassName("dis_hide")[0].style.display = "none";
+        location.href = "\newconact.html";
+      }
+    </script>
+  </body>
+</html>
